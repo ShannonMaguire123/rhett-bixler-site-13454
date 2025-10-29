@@ -26,6 +26,10 @@ const Bio = () => {
                 <span className="text-primary text-lg">•</span>
                 <span>Notable Clients: The Weekend, Gigi Hadid, Kendal & Kylie Jenner</span>
               </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary text-lg">•</span>
+                <span>Shared the stage with: Calvin Harris, Kaytranada, Chris Lake & Alesso</span>
+              </li>
             </ul>
           </div>
         </div>

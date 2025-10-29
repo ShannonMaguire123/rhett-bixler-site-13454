@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Bio from "@/components/Bio";
+import Quote from "@/components/Quote";
 import Mixes from "@/components/Mixes";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
@@ -13,6 +14,7 @@ const Index = () => {
       <main>
         <Hero />
         <Bio />
+        <Quote />
         <Mixes />
         <Gallery />
         <Contact />

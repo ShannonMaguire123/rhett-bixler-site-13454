@@ -8,7 +8,7 @@ const Bio = () => {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-gradient-to-b from-card to-background border border-border rounded-[1.125rem] p-6 shadow-lg card-glow">
             <p className="text-foreground/90 mb-6 leading-relaxed">
-              DJ Rhett Bixler is a New York–based disco and open-format DJ known for his seamless blends of classic groove and contemporary dance energy. With over 15 years behind the decks, he's a fixture in the city's nightlife, holding residencies at Paul's Baby Grand, Paul's Casablanca, Joyface, Casa Cipriani, and Socialista. Rhett's sets channel the spirit of Studio 54 through a modern lens - vibrant, soulful, and irresistibly danceable - making him a favorite among discerning crowds and tastemakers alike
+              DJ Rhett Bixler is a New York–based disco and open-format DJ known for his seamless blends of classic groove and contemporary dance energy. Rhett is a fixture in the city's nightlife, holding residencies at Paul's Baby Grand, Paul's Casablanca, Joyface, Casa Cipriani, and Socialista. Rhett's sets channel the spirit of Studio 54 through a modern lens - vibrant, soulful, and irresistibly danceable - making him a favorite among discerning crowds and tastemakers alike
             </p>
           </div>
           <div className="bg-gradient-to-b from-card to-background border border-border rounded-[1.125rem] p-6 shadow-lg card-glow">

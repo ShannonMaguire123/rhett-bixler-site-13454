@@ -18,19 +18,19 @@ const Bio = () => {
             <h3 className="font-display text-xl font-semibold mb-4">Highlights</h3>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
-                <span className="text-primary text-lg">•</span>
+                <span className="text-foreground text-lg">•</span>
                 <span>Weekly residencies: Paul's Baby Grand, Paul's Casablanca</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary text-lg">•</span>
+                <span className="text-foreground text-lg">•</span>
                 <span>Notable events: Piaget, Louis Vuitton, Harper's BAZAAR</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary text-lg">•</span>
+                <span className="text-foreground text-lg">•</span>
                 <span>Notable clients: The Weekend, Gigi Hadid, Kendall & Kylie Jenner</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary text-lg">•</span>
+                <span className="text-foreground text-lg">•</span>
                 <span>Shared the stage with: Calvin Harris, KAYTRANADA, Chris Lake & Alesso</span>
               </li>
             </ul>

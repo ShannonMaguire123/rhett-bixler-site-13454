@@ -16,15 +16,15 @@ const Bio = () => {
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="text-primary text-lg">•</span>
-                <span>Support for Artist X (2024)</span>
+                <span>Weekly residencies: Paul's Baby Grand, Paul's Casablanca</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary text-lg">•</span>
-                <span>Peak set @ Solaris (Main Room)</span>
+                <span>Notable events: Piaget, Louis Vuitton, Harper's BAZAAR</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary text-lg">•</span>
-                <span>Pulse FM monthly (since 2023)</span>
+                <span>Notable Clients: The Weekend, Gigi Hadid, Kendal & Kylie Jenner</span>
               </li>
             </ul>
           </div>

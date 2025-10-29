@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Play, Mail } from "lucide-react";
+import rhettDjImage from "@/assets/rhett-dj.jpeg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -42,12 +43,10 @@ const Hero = () => {
             </div>
           </div>
           <div className="bg-gradient-to-b from-card to-background border border-border rounded-[1.125rem] overflow-hidden shadow-2xl card-glow">
-            <iframe
-              className="w-full aspect-video"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/rhettbixler/rhettbixlermix&color=%236cf0ff&auto_play=false&show_user=true"
+            <img
+              src={rhettDjImage}
+              alt="Rhett Bixler DJing"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>

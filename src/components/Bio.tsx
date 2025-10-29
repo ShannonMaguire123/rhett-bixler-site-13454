@@ -28,7 +28,7 @@ const Bio = () => {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary text-lg">•</span>
-                <span>Shared the stage with: Calvin Harris, Kaytranada, Chris Lake & Alesso</span>
+                <span>Shared the stage with: Calvin Harris, KAYTRANADA, Chris Lake & Alesso</span>
               </li>
             </ul>
           </div>

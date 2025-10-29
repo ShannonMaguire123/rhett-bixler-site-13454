@@ -14,11 +14,6 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div className="grid md:grid-cols-[1.2fr,1fr] gap-8 items-center">
           <div className="space-y-6">
-            <div className="inline-block px-4 py-2 border border-border rounded-full">
-              <span className="text-xs tracking-wider uppercase text-muted-foreground font-medium">
-                House • Techno • Breaks
-              </span>
-            </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
               Rhythm-driven sets for late nights & sunrise moments.
             </h1>

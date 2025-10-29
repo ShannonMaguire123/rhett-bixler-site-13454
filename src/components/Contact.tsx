@@ -73,14 +73,6 @@ const Contact = () => {
                 <Music2 className="w-5 h-5" />
                 <span>SoundCloud</span>
               </a>
-              <a
-                href="#"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Mixcloud"
-              >
-                <Radio className="w-5 h-5" />
-                <span>Mixcloud</span>
-              </a>
             </div>
           </div>
           <div className="bg-gradient-to-b from-card to-background border border-border rounded-[1.125rem] p-6 shadow-lg card-glow">

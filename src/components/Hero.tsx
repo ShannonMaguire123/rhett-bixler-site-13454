@@ -19,7 +19,7 @@ const Hero = () => {
               Rhythm-driven sets for late nights & sunrise moments.
             </h1>
             <p className="text-muted-foreground text-lg max-w-[55ch]">
-              Rhett blends deep grooves and euphoric tops with a selector's ear. Based in Berlin, available worldwide for clubs, festivals, and livestreams.
+              Rhett blends deep grooves and euphoric tops with a selector's ear. Based in New York, available worldwide for clubs, festivals, and livestreams.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button

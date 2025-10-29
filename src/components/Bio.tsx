@@ -13,7 +13,7 @@ const Bio = () => {
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-center gap-3">
                 <Home className="w-5 h-5 text-primary" />
-                <span>Home base: Berlin, DE</span>
+                <span>Home base: New York, NY</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-primary" />

@@ -53,10 +53,12 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-bold;
+    @apply bg-background text-foreground;
     background: hsl(0 0% 0%);
     min-height: 100vh;
     position: relative;
+    font-weight: 400;
+    letter-spacing: 0.02em;
   }
 
   body::before {

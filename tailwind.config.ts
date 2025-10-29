@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Nunito', 'system-ui', 'sans-serif'],
-        display: ['Nunito', 'system-ui', 'sans-serif'],
+        sans: ['Cormorant Garamond', 'serif'],
+        display: ['Cormorant Garamond', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",

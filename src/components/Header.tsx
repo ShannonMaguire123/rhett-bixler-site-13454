@@ -36,9 +36,9 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-background/55 border-b border-border/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-16">
           <div className="logo">
-            <img src={logo} alt="Rhett Bixler" className="h-20 md:h-24 w-auto" />
+            <img src={logo} alt="Rhett Bixler" className="h-8 md:h-10 w-auto" />
           </div>
           <nav className="hidden md:flex items-center gap-6">
             {[

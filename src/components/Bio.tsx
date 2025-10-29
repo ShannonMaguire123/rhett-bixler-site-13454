@@ -16,10 +16,6 @@ const Bio = () => {
                 <span>Home base: New York, NY</span>
               </li>
               <li className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-primary" />
-                <span>Typical set: 90–180 minutes</span>
-              </li>
-              <li className="flex items-center gap-3">
                 <Disc3 className="w-5 h-5 text-primary" />
                 <span>Tech: USB/rekordbox, 2–3 CDJs + mixer</span>
               </li>

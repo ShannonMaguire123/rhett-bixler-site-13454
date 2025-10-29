@@ -6,21 +6,29 @@ const Mixes = () => {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-gradient-to-b from-card to-background border border-border rounded-[1.125rem] overflow-hidden shadow-lg card-glow">
             <iframe
-              className="w-full aspect-video"
-              src="https://player.mixcloud.com/widget/iframe/?feed=%2Fmixcloud%2Fmix-name%2F"
+              className="w-full"
+              height="300"
+              scrolling="no"
+              frameBorder="no"
               allow="autoplay"
-              frameBorder="0"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/rhettbixler/rhettbixlermix&color=%236cf0ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"
             />
             <div className="p-4">
-              <p className="text-muted-foreground">Sunrise Session — deep, rolling, melodic.</p>
+              <p className="text-muted-foreground">Featured mix — deep grooves and euphoric energy.</p>
             </div>
           </div>
-          <div className="bg-gradient-to-b from-card to-background border border-border rounded-[1.125rem] p-6 shadow-lg card-glow flex flex-col justify-center">
-            <audio controls className="w-full mb-4">
-              <source src="/set-live.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-            <p className="text-muted-foreground">Live @ Warehouse X — peak-time energy.</p>
+          <div className="bg-gradient-to-b from-card to-background border border-border rounded-[1.125rem] overflow-hidden shadow-lg card-glow">
+            <iframe
+              className="w-full"
+              height="300"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/rhettbixler/rhettbixlermix&color=%236cf0ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"
+            />
+            <div className="p-4">
+              <p className="text-muted-foreground">Latest set — rhythm-driven selections.</p>
+            </div>
           </div>
         </div>
       </div>

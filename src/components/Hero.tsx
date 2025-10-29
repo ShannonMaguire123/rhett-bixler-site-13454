@@ -52,7 +52,7 @@ const Hero = () => {
               scrolling="no"
               frameBorder="no"
               allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/209262651&color=%236cf0ff&inverse=false&auto_play=false&show_user=true"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/rhettbixler/rhettbixlermix&color=%236cf0ff&auto_play=false&show_user=true"
             />
           </div>
         </div>

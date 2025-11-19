@@ -4,7 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import { Download, Instagram, Music2, Radio } from "lucide-react";
+import { Download, Instagram, Music2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +14,7 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -22,7 +23,23 @@ const Contact = () => {
       return;
     }
 
-    // In a real app, you would submit to a backend here
+    // Submit to database
+    const { error } = await supabase
+      .from('contact_submissions')
+      .insert([
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }
+      ]);
+
+    if (error) {
+      console.error('Error submitting form:', error);
+      toast.error("Failed to send message. Please try again.");
+      return;
+    }
+
     toast.success("Message sent! We'll get back to you soon.");
     setFormData({ name: "", email: "", message: "" });
   };

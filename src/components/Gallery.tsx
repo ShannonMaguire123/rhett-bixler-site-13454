@@ -16,7 +16,7 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      title: "Live in the Booth",
+      title: "Martha Hunt event NYFW",
       image: rhettGreenBackdrop,
     },
     {

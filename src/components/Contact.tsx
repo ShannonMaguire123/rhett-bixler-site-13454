@@ -40,6 +40,32 @@ const Contact = () => {
       return;
     }
 
+    // Send email notification
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        console.error('Failed to send email notification');
+      }
+    } catch (emailError) {
+      console.error('Error sending email:', emailError);
+      // Don't show error to user as the form was still saved
+    }
+
     toast.success("Message sent! We'll get back to you soon.");
     setFormData({ name: "", email: "", message: "" });
   };

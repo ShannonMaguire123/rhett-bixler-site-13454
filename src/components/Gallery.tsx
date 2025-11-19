@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import rhettGreenBackdrop from "@/assets/rhett-green-backdrop.jpeg";
 import rhettWeddingEvent from "@/assets/rhett-wedding-event.jpg";
 import rhettPortrait from "@/assets/rhett-portrait.png";
@@ -54,25 +55,31 @@ const Gallery = () => {
         </div>
 
         <Carousel
+          plugins={[
+            Autoplay({
+              delay: 3000,
+              stopOnInteraction: true,
+            }),
+          ]}
           opts={{
-            align: "start",
+            align: "center",
             loop: true,
           }}
           className="w-full"
         >
-          <CarouselContent className="-ml-4">
+          <CarouselContent className="-ml-2 md:-ml-4">
             {galleryItems.map((item) => (
-              <CarouselItem key={item.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                <Card className="group overflow-hidden border-border bg-card cursor-pointer card-glow">
-                  <div className="relative aspect-[4/3] overflow-hidden bg-muted/20">
+              <CarouselItem key={item.id} className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3">
+                <Card className="group overflow-hidden border-border bg-card cursor-pointer card-glow h-full">
+                  <div className="relative aspect-[3/4] sm:aspect-[4/3] overflow-hidden bg-muted/20">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <h3 className="text-foreground font-bold text-lg">
+                        <h3 className="text-foreground font-bold text-base sm:text-lg">
                           {item.title}
                         </h3>
                       </div>
@@ -82,9 +89,21 @@ const Gallery = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
+          <div className="flex justify-center mt-4 gap-1">
+            {galleryItems.map((_, index) => (
+              <div
+                key={index}
+                className="h-1.5 w-1.5 rounded-full bg-muted/50"
+              />
+            ))}
+          </div>
+          <CarouselPrevious className="hidden sm:flex -left-12" />
+          <CarouselNext className="hidden sm:flex -right-12" />
         </Carousel>
+        
+        <p className="text-center text-sm text-muted-foreground mt-6 sm:hidden">
+          Swipe to explore more
+        </p>
       </div>
     </section>
   );

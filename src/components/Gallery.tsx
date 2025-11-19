@@ -21,7 +21,7 @@ const Gallery = () => {
     },
     {
       id: 2,
-      title: "Wedding Event",
+      title: "Private Wedding Event, New Orleans",
       image: rhettWeddingEvent,
     },
     {

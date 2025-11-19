@@ -50,7 +50,7 @@ const Contact = () => {
               </p>
               <p className="text-foreground">
                 <strong>Press kit:</strong>{" "}
-                <a href="#" className="text-primary hover:underline inline-flex items-center gap-2">
+                <a href="/Rhett_Bixler_Press_Kit_2025.pdf" download className="text-primary hover:underline inline-flex items-center gap-2">
                   <Download className="w-4 h-4" />
                   Download PDF
                 </a>

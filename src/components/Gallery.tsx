@@ -36,7 +36,7 @@ const Gallery = () => {
     },
     {
       id: 5,
-      title: "Rooftop Set",
+      title: "Massara NY Flatiron Opening",
       image: rhettRooftop,
     },
   ];

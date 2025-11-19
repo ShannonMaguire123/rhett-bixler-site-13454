@@ -101,7 +101,9 @@ const Contact = () => {
             </div>
             <div className="flex flex-wrap gap-4 pt-4 border-t border-border">
               <a
-                href="#"
+                href="https://www.instagram.com/rhettbixler/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
